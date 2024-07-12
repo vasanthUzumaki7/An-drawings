@@ -1,0 +1,98 @@
+ *{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-container{
+    width: 100%;
+    z-index: 1;
+    height: 90vh;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation-name: first-carousel;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes first-carousel {
+    0% {
+        background: url('https://wallpapercave.com/wp/wp9102200.jpg') center left no-repeat;
+        background-size: 120%;
+    }
+    20% {
+        background: url('https://wallpapercave.com/wp/wp9311352.jpg') center top no-repeat;
+        background-size: 120%;
+    }
+    40% {
+        background: url('https://images8.alphacoders.com/133/thumb-1920-1330536.png') center right no-repeat;
+        background-size: 100%;
+    }
+    60% {
+        background: url('https://images8.alphacoders.com/133/thumb-1920-1330685.png') center bottom no-repeat;
+        background-size: 120%;
+    }
+    80% {
+        background: url('https://images2.alphacoders.com/135/thumb-1920-1350707.jpeg') center left no-repeat;
+        background-size: 100%;
+    }
+    100% {
+        background: url('https://wallpapercave.com/wp/wp9102200.jpg') left center no-repeat;
+        background-size: 120%;
+    }
+}
+
+.home-container img{
+    border: 20px solid rgba(83, 75, 29, 1);
+    width: 40%;
+    border-radius: 5px;
+    padding: 10px;
+}
+.home-container .corousel-left{
+    text-align: center;
+    box-sizing: border-box;
+    width: 40%;
+    padding: 20px;
+}
+.corousel-left h1{
+    font-size: 3.0em;
+    color: white;
+}
+.corousel-left p{
+    font-size: 1.7em;
+    color: white;
+}
+.corousel-left button{
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 850px){
+    .corousel-left{
+        width: 100%;
+    }
+    .corousel-left img{
+        width: 100%;
+    }
+    .corousel-left h1{
+        font-size: 2.0em;
+    }
+    .corousel-left p{
+        font-size: 1.5em;
+    }
+    .home-container{
+        height: auto;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+    .home-container .corousel-left{
+        width: 100%;
+    }
+}

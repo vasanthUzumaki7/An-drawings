@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.upload-container .upload-container1{
+   box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: rgb(242, 242, 242);
+    padding: 10px;
+    height: 70vh;
+    width: 40%;
+}
+.upload-container2 img{
+    width:100px;
+    float: left;
+    clear: left;
+}
+.upload-container1 .upload-btn{
+    margin: 10px 0px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.upload-container .upload-container2{
+    width: 40%;
+    box-shadow: 0 0 10px black;
+    height:70vh ;
+    border-radius: 10px;
+    background-color: rgb(242, 242, 242);
+    overflow: scroll;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.upload-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 10px;
+}
+.upload-container1 input,.upload-container1 textarea{
+    margin: 5px 0px;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+.upload-container2 .upload-card{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0px 5px 5px;
+}
+.upload-container2 .upload-card:hover{
+    background-color: rgb(180, 180, 180);
+}
+.upload-container2 .upload-card .upload-card-right{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.upload-container2 .upload-card .update-btn ,.delete-btn{
+    margin: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.upload-container2 .upload-card .update-btn:hover ,.delete-btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px black;
+}
+

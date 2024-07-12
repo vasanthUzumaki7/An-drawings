@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .second-carousel {
+    display: flex;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    background: url('https://wallpapercave.com/wp/wp5298647.jpg') no-repeat center center fixed;
+    background-size: cover;
+    flex-grow: 1;
+    padding: 20px; /* Ensure the content doesn't go under the buttons */
+  }
+  
+  .second-carousel img {
+    width: 20%;
+    border: 15px solid rgb(158, 144, 67);
+    padding: 5px;
+    margin: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .second-carousel img:hover {
+    transform: scale(1.1);
+  }
+  
+  .prevbutton, .nextbutton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 25px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1; /* Ensure buttons are above images */
+  }
+  
+  .prevbutton {
+    left: 10px; /* Align to the left */
+  }
+  
+  .nextbutton {
+    right: 10px; /* Align to the right */
+  }
+  
+  .prevbutton:hover, .nextbutton:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  

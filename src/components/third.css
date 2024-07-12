@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.third-container .third-overall div img{
+   width: 100%;
+   height: 250px;
+}
+.third-overall{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 0px 40px 0px;
+}
+.third-overall .card{
+    width: 210px;
+    box-shadow: 0px 0px 10px black;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 1s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.third-overall .card:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.card p,h4,span{
+    padding: 4px 10px;
+    box-sizing: border-box;
+}
+.third-overall .card .navigation-dots .dots{
+    width: 20px;
+    height: 20px;
+}
+.navigation-dots{
+    text-align: center;
+}
+.third-overall .card .navigation-dots .dots:hover{
+    color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.third-overall .card .navigation-dots .dots:active{
+    background-color: rgb(134, 108, 108);
+}
+.third-overall .card .card-heart{
+    cursor: pointer;
+}
+.third-overall .card .card-heart:hover{
+    color: red;
+}
+.third-overall .card .card-heart:active{
+    color:  greenyellow;
+}
+.third-container .third-title{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+}
+.third-title h1{
+    font-size: 2.0em;
+    color: black;
+    text-shadow: 0px 0px 5px rgb(139, 136, 136);
+}
+.third-title p{
+    font-size: 1.0em;
+    color: black;
+    text-shadow: 0px 0px 5px rgb(139, 136, 136);
+}
+.third-container{
+    background-color: rgb(247, 247, 247);
+    padding: 20px 0px 0px 0px;
+}
+.third-title input{
+    max-width: 300px;
+    font-size: 1.1em;
+    margin: 10px 0px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 10px black;
+}
